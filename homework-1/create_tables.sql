@@ -28,7 +28,7 @@ CREATE TABLE orders
 
 ALTER TABLE orders
 ALTER COLUMN customer_id SET DATA TYPE varchar,
-ADD CONSTRAINT emploeey_fk FOREIGN KEY (employee_id)
-REFERENCES employees(employee_id),
+ADD CONSTRAINT customer_fk FOREIGN KEY (customer_id)
+REFERENCES customers(customer_id),
 ADD CONSTRAINT emploeey_fk FOREIGN KEY (employee_id)
 REFERENCES employees(employee_id);
